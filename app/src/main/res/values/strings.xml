@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AnimeChart</string>
+    <string name="animes_name">Nama Anime</string>
+    <string name="judul_anime">Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.</string>
+    <string name="sinopsis_anime">For ages, humanity flourished through the power of magic, a gift from witches to aid mankind…</string>
+    <string name="about">About</string>
+    <string name="nama_editor">Randy Nasuta</string>
+    <string name="email_editor">randynasuta123@gmail.com</string>
+    <string name="animechart">AnimeChart</string>
+    <string name="total_share">Total Share:</string>
+    <string name="nilai_awal_share">0</string>
+</resources>

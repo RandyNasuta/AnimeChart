@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgThumbnailDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/imgAnimeDetail"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="15dp"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/txtAnimeTitleDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:text="@string/judul_anime"
+                    style="@style/shadoweffect"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="50dp"
+                    android:scrollbars="vertical"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <LinearLayout
+                    android:layout_marginTop="210dp"
+                    android:layout_marginLeft="180dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:id="@+id/imgBtnShare"
+                        android:src="@drawable/ic_baseline_share_24"
+                        android:background="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/lbTotalShare"
+                        android:layout_marginVertical="2dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/total_share"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtCountShare"
+                        android:layout_marginVertical="2dp"
+                        android:text="@string/nilai_awal_share"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtAnimeSynopsisDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sinopsis_anime"
+                android:textColor="@color/black"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="13dp"
+                android:textSize="16sp"
+                android:justificationMode="inter_word"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgAnime"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/primary_color">
+
+            <TextView
+                android:id="@+id/txtAnimeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/judul_anime"
+                android:textSize="18sp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                />
+
+            <TextView
+                android:id="@+id/txtAnimeDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:text="@string/sinopsis_anime"
+                android:textSize="16sp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
